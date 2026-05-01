@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for the Bible Website project.">
+    <meta name="keywords" content="contact, Bible website, student project">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <header>
     <h1>Contact</h1>
 </header>
@@ -21,17 +22,36 @@
 </nav>
 
 <main>
-
     <h2>Contact Information</h2>
-
     <p>Name: Nahom Haile</p>
-    <p>Email: yourname@example.com</p>
+    <p>Email: <a href="mailto:nahaile@asu.edu">nahaile@asu.edu</a></p>
 
+    <h2>Send a Message</h2>
+    <p>Use this form to share a question, comment, or favorite Bible verse. The form is for the class project and does not submit to a server.</p>
+
+    <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+            <option value="question">Question</option>
+            <option value="verse">Favorite Verse</option>
+            <option value="feedback">Website Feedback</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
 </main>
 
 <footer>
     <p>&copy; 2026 Bible Website | Nahom Haile</p>
 </footer>
-
 </body>
 </html>
